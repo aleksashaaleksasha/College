@@ -1,0 +1,76 @@
+object fMain: TfMain
+  Left = 600
+  Height = 305
+  Top = 233
+  Width = 642
+  Align = alClient
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsDialog
+  Caption = 'Телефонный справочник'
+  ClientHeight = 305
+  ClientWidth = 642
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '3.2.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 72
+    Top = 0
+    Width = 642
+    Align = alTop
+    BevelColor = clNone
+    ClientHeight = 72
+    ClientWidth = 642
+    Color = clNone
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+    object bAdd: TSpeedButton
+      Left = 8
+      Height = 24
+      Top = 8
+      Width = 136
+      Caption = 'Добавить контакт'
+      OnClick = bAddClick
+    end
+    object bEdit: TSpeedButton
+      Left = 168
+      Height = 24
+      Top = 8
+      Width = 128
+      Caption = 'Редактировать контакт'
+      OnClick = bEditClick
+    end
+    object bDel: TSpeedButton
+      Left = 328
+      Height = 24
+      Top = 8
+      Width = 136
+      Caption = 'Удалить контакт'
+      OnClick = bDelClick
+    end
+    object bSort: TSpeedButton
+      Left = 488
+      Height = 24
+      Top = 8
+      Width = 144
+      Caption = 'Сортировать список'
+      OnClick = bSortClick
+    end
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 233
+    Top = 72
+    Width = 642
+    Align = alClient
+    Color = clNone
+    ColCount = 3
+    DefaultRowHeight = 22
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 1
+    OnDblClick = bEditClick
+  end
+end

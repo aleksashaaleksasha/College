@@ -1,0 +1,173 @@
+object fEdit: TfEdit
+  Left = 532
+  Height = 280
+  Top = 313
+  Width = 500
+  BorderStyle = bsDialog
+  Caption = 'книжкоделание'
+  ClientHeight = 280
+  ClientWidth = 500
+  Color = 18318
+  DesignTimePPI = 120
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '3.2.0.0'
+  object Label1: TLabel
+    Left = 10
+    Height = 20
+    Top = 0
+    Width = 111
+    Caption = 'название книги'
+    Color = clWhite
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object book_name: TEdit
+    Left = 10
+    Height = 28
+    Top = 24
+    Width = 475
+    Color = clWhite
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 10
+    Height = 20
+    Top = 56
+    Width = 80
+    Caption = 'имя автора'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object book_author: TEdit
+    Left = 10
+    Height = 28
+    Top = 80
+    Width = 475
+    Color = clWhite
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 10
+    Height = 20
+    Top = 112
+    Width = 60
+    Caption = 'наличие'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object CBNote: TComboBox
+    Left = 10
+    Height = 28
+    Top = 136
+    Width = 475
+    Color = clWhite
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ItemHeight = 20
+    ItemIndex = 0
+    Items.Strings = (
+      'да'
+      'нет'
+    )
+    ParentFont = False
+    TabOrder = 2
+    Text = 'да'
+  end
+  object bSave: TBitBtn
+    Left = 10
+    Height = 34
+    Top = 230
+    Width = 194
+    Caption = 'сохранить книжку'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Kind = bkOK
+    ModalResult = 1
+    ParentFont = False
+    TabOrder = 3
+  end
+  object bSave1: TBitBtn
+    Left = 291
+    Height = 34
+    Top = 230
+    Width = 194
+    Cancel = True
+    Caption = 'назад'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Kind = bkCancel
+    ModalResult = 2
+    ParentFont = False
+    TabOrder = 4
+  end
+  object book_year: TEdit
+    Left = 10
+    Height = 28
+    Top = 192
+    Width = 194
+    Color = clWhite
+    TabOrder = 5
+  end
+  object Label4: TLabel
+    Left = 19
+    Height = 20
+    Top = 167
+    Width = 87
+    Caption = 'год выпуска'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object book_cost: TEdit
+    Left = 291
+    Height = 28
+    Top = 192
+    Width = 194
+    Color = clWhite
+    TabOrder = 6
+  end
+  object Label5: TLabel
+    Left = 294
+    Height = 20
+    Top = 170
+    Width = 34
+    Caption = 'цена'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+end

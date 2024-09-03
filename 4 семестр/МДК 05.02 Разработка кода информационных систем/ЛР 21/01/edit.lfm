@@ -1,0 +1,94 @@
+object fEdit: TfEdit
+  Left = 586
+  Height = 280
+  Top = 324
+  Width = 500
+  BorderStyle = bsDialog
+  Caption = 'Редактор контакта'
+  ClientHeight = 280
+  ClientWidth = 500
+  Color = clNone
+  DesignTimePPI = 120
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '3.2.0.0'
+  object Label1: TLabel
+    Left = 10
+    Height = 20
+    Top = 10
+    Width = 108
+    Caption = 'имя контактика'
+    Color = clNone
+    ParentColor = False
+  end
+  object eName: TEdit
+    Left = 10
+    Height = 28
+    Top = 40
+    Width = 475
+    Color = clSilver
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 10
+    Height = 20
+    Top = 90
+    Width = 126
+    Caption = 'номер контактика'
+  end
+  object eTelephone: TEdit
+    Left = 10
+    Height = 28
+    Top = 120
+    Width = 475
+    Color = clSilver
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 10
+    Height = 20
+    Top = 160
+    Width = 166
+    Caption = 'выберите тип телефона'
+    OnClick = Label3Click
+  end
+  object CBNote: TComboBox
+    Left = 10
+    Height = 28
+    Top = 190
+    Width = 475
+    Color = clSilver
+    ItemHeight = 20
+    ItemIndex = 0
+    Items.Strings = (
+      'Мобильный'
+      'Домашний'
+      'Служебный '
+      'Соседский'
+      'Президентский'
+    )
+    TabOrder = 2
+    Text = 'Мобильный'
+  end
+  object bSave: TBitBtn
+    Left = 10
+    Height = 34
+    Top = 230
+    Width = 194
+    Caption = 'Сохранить контакт'
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 3
+  end
+  object bSave1: TBitBtn
+    Left = 291
+    Height = 34
+    Top = 230
+    Width = 194
+    Cancel = True
+    Caption = 'Не сохранять'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 4
+  end
+end

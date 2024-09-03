@@ -1,0 +1,220 @@
+object Fmain: TFmain
+  Left = 442
+  Height = 240
+  Top = 255
+  Width = 332
+  Caption = 'книжки от саши'
+  ClientHeight = 240
+  ClientWidth = 332
+  Color = 5526697
+  DesignTimePPI = 120
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '3.2.0.0'
+  object book_name_label: TLabel
+    AnchorSideRight.Control = book_name_edit
+    AnchorSideBottom.Side = asrBottom
+    Left = 71
+    Height = 17
+    Top = 27
+    Width = 86
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Bottom = 1
+    BorderSpacing.Around = 10
+    Caption = 'имя книжки'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Height = -15
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = book_name_labelClick
+  end
+  object book_author_label: TLabel
+    AnchorSideRight.Control = book_author_edit
+    AnchorSideBottom.Side = asrBottom
+    Left = 80
+    Height = 17
+    Top = 59
+    Width = 77
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Around = 10
+    Caption = 'автор книг'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Height = -15
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object is_available_label: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = is_available_edit
+    AnchorSideBottom.Control = publication_date_label
+    AnchorSideBottom.Side = asrBottom
+    Left = 85
+    Height = 17
+    Top = 93
+    Width = 71
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Left = 75
+    BorderSpacing.Right = 75
+    BorderSpacing.Bottom = 20
+    BorderSpacing.Around = 10
+    Caption = 'в наличии'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Height = -15
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object is_available_edit: TCheckBox
+    AnchorSideLeft.Control = is_available_label
+    AnchorSideTop.Control = book_author_label
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = publication_date_edit
+    Left = 170
+    Height = 20
+    Top = 92
+    Width = 21
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Left = 80
+    BorderSpacing.Around = 5
+    TabOrder = 0
+  end
+  object publication_date_label: TLabel
+    AnchorSideRight.Control = publication_date_edit
+    AnchorSideBottom.Side = asrBottom
+    Left = 73
+    Height = 17
+    Top = 123
+    Width = 84
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Around = 10
+    Caption = 'дата выхода'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Height = -15
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object book_cost_label: TLabel
+    AnchorSideRight.Control = book_cost_edot
+    AnchorSideBottom.Side = asrBottom
+    Left = 124
+    Height = 17
+    Top = 155
+    Width = 33
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Around = 10
+    Caption = 'цена'
+    Color = clWhite
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Height = -15
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object to_next_button: TButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 204
+    Height = 28
+    Top = 192
+    Width = 108
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Around = 20
+    Caption = 'Следующий'
+    TabOrder = 1
+    OnClick = to_next_buttonClick
+  end
+  object Previouss: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 20
+    Height = 30
+    Top = 190
+    Width = 118
+    Anchors = [akLeft, akBottom]
+    AutoSize = True
+    BorderSpacing.Around = 20
+    Caption = 'Предыдущий'
+    TabOrder = 2
+    OnClick = PrevioussClick
+  end
+  object book_name_edit: TEdit
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = book_author_edit
+    Left = 167
+    Height = 30
+    Top = 20
+    Width = 160
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Top = 15
+    BorderSpacing.Around = 5
+    TabOrder = 3
+    OnChange = book_name_editChange
+  end
+  object book_author_edit: TEdit
+    AnchorSideTop.Control = book_name_label
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = is_available_edit
+    Left = 167
+    Height = 32
+    Top = 55
+    Width = 160
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Around = 5
+    TabOrder = 4
+  end
+  object publication_date_edit: TEdit
+    AnchorSideTop.Control = is_available_label
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = book_cost_edot
+    Left = 167
+    Height = 28
+    Top = 117
+    Width = 160
+    Anchors = [akLeft, akRight, akBottom]
+    BorderSpacing.Around = 5
+    TabOrder = 5
+  end
+  object book_cost_edot: TEdit
+    AnchorSideTop.Control = publication_date_label
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = to_next_button
+    Left = 167
+    Height = 22
+    Top = 150
+    Width = 160
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Around = 5
+    TabOrder = 6
+  end
+end

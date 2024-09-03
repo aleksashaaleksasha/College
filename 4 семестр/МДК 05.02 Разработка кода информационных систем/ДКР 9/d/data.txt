@@ -1,0 +1,25 @@
+Евгений Онегин,Пушкин,True,1833,399
+Герой нашего времени,Лермонтов,False,15,449
+Война и мир,Толстой,True,0,15 000,999
+Властелин колец,Толкин ихихихи,True,0,799
+Гарри Поттер,Роулинг,False,18,899
+,,False,,
+,,False,,
+,,False,,
+,,False,,
+,,False,,
+,,False,,
+,,False,,
+,,False,,
+,,False,,
+,,False,,
+,,False,,
+,,False,,
+,,False,,
+,,False,,
+,,False,,
+,,False,,
+,,False,,
+,,False,,
+,,False,,
+,,False,,
